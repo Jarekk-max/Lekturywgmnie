@@ -1,0 +1,229 @@
+﻿body {
+  background-color:rgba(0, 0, 0, 0.91);
+  margin: 0 !important;
+  display:block;
+  box-shadow:#000 0px 0px 50px;
+}
+
+.calosc {
+    padding: 0px 5px 10px 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background:white;
+}
+
+
+.naglowek {
+   
+    margin:auto;
+    padding:25px 0px;
+	text-align: center;
+    text-shadow: 5px 5px 20px #000;
+    transition-duration: 0.5s;
+    clear:both;
+    background:url(wood.jpg);
+    box-shadow:#000 0px 0px 30px;
+    display:block;
+	
+}
+
+
+.naglowek h1 {
+    color:#ffffff;
+    transition-duration: 0.5s;
+
+}
+
+.naglowek h1:hover {
+    color: #b6ff00;
+}
+
+.srodek{
+  padding : 10px 5px;
+  width:500px;
+}
+
+.srodek p{
+  font-size:25px;
+  padding:0px 0px 10px 60px;
+  
+}
+
+
+.lektury ol li{
+   font-size:25px;
+   clear:both;
+   transition-duration:0.3s;
+   
+   
+}
+
+    .lektury ol li:hover {
+        color: #b6ff00
+    }
+
+
+.lektury p{
+    font-size:22px;
+}
+
+.lista{
+    background-color:rgba(255, 255, 255, 0.53);
+	padding:0px 30px 0px 0px;
+}
+
+
+nav {
+    background-color: #0094ff;
+    margin-bottom: 5px;
+
+}
+
+    nav ol {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding-left:50%;
+        list-style-type: none;
+       /* font-size: 0; */
+       text-shadow:5px 5px 20px #000000;
+    }
+
+
+    nav ol li{
+        transition-duration:0.5s;
+
+    }
+
+    nav ol li:hover{
+        background-color:rgba(18, 18, 18, 0.60);
+        box-shadow:black 2px 2px 30px;
+    }
+
+
+
+    nav ol > li {
+      float: left;
+  
+    }
+
+    nav a {
+        display: block;
+        color: black;
+        text-decoration: none;
+        line-height: 70px;
+        padding: 0 50px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-family: 'Roboto', sans-serif;
+        border-right: 2px solid black;
+        transition: .3s linear;
+    }
+
+    nav ol li a {
+        display: block;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        transition: all .3s ease-in-out;
+    }
+
+
+
+    nav li:nth-child(2) a {
+        border: none;
+    }
+
+    nav i {
+        margin-right: 10px;
+        font-size: 26px;
+        vertical-align: -1px;
+        transition: .3s linear;
+    }
+
+    nav a:hover {
+        color: #b6ff00;
+    }
+
+        nav a:hover i {
+            color: #00ff21;
+        }
+
+    nav ol > li > ul {
+        visibility: hidden;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        transition: all .3s ease-in-out;
+        content: ' ▾';
+        transform:scaleY(0);/*Zwijanie*/
+        -webkit-transform:scaleY(0);
+        transform-origin:50% 0;
+        -webkit-transform-origin:50% 0;
+        transition:500ms;/*CZAS ROZWIJANIA*/
+        position:absolute;
+    }
+
+    nav ol > li:hover > ul{
+        visibility:visible;
+        transform: scaleY(1);/*Rozwijanie*/
+        -webkit-transform:scaleY(1);
+        position:absolute;/*nieodziaływanie na przemieszanie przedmiotów strukruty HTML*/
+        box-shadow:#000000 5px 5px 30px;  
+  
+        }
+
+    nav ol li a:not(:only-child)::after {
+        content: ' ▾';
+    }
+
+
+    nav ol > li > ul > li {
+        border-top: 1px dashed black;
+        background-color: rgba(255, 255, 255, 0.67);
+    }
+
+        nav ol > li > ul > li:hover {
+            background-color:rgba(0, 0, 0, 0.93);
+            
+        }
+   
+.tresc{
+    padding:20px 10%;
+
+}
+
+    .tresc p{
+    font-size:20px;
+    }
+
+
+
+    footer{
+            padding: 5px;
+            text-align: center;
+            display:block;
+            box-shadow:#000 0px 0px 30px;
+            background-color:rgba(18, 18, 18, 0.60);
+        }
+
+       footer a {
+            text-decoration: none;
+            color: black;
+         }
+
+
+
+.lista ol li a{
+    text-decoration:none;
+    color:black;
+	transition-duration:0.3s;
+
+
+}
+
+.lista ol li a:hover{
+	color:#b6ff00;
+
+
+}
